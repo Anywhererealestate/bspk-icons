@@ -1,0 +1,38 @@
+{
+    "name": "@bspk/icons",
+    "version": "1.0.0-alpha",
+    "main": "index.js",
+    "license": "CC-BY-ND-4.0",
+    "scripts": {
+        "clean": "rm -rf ./*.js ./*.d.ts ./*svg ./src ./meta ./SvgIcon && mkdir -p src && touch ./src/index.ts",
+        "generate": "ts-node .scripts/build.ts",
+        "tsc": "tsc",
+        "build": "ts-node .scripts/build.ts && tsc",
+        "build:material": "ts-node .scripts/build-material.ts",
+        "build:anywhere": "ts-node .scripts/build-anywhere.ts",
+        "semantic-release": "semantic-release",
+        "pack": "npm run build && npm pack && npm run clean && mkdir ./src && mkdir -p src && touch ./src/index.ts"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "peerDependencies": {
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "devDependencies": {
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/gitlab": "^13.2.1",
+        "@semantic-release/npm": "^12.0.1",
+        "@svgr/core": "^8.1.0",
+        "@svgr/plugin-jsx": "^8.1.0",
+        "@types/node": "^22.15.17",
+        "@types/react": "^18.3.12",
+        "@types/react-dom": "^18.3.1",
+        "prettier": "^3.3.3",
+        "semantic-release": "^24.2.0",
+        "svgo": "^3.3.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.6.3"
+    }
+}
