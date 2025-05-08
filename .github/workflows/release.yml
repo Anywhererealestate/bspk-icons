@@ -19,11 +19,8 @@ jobs:
             - name: Checkout repository
               uses: actions/checkout@v4
 
-            - name: Setup Node.js
+            - name: Setup Node
               uses: actions/setup-node@v4
-              with:
-                  node-version: 18
-                  cache: 'npm'
 
             - name: Install dependencies
               run: npm ci
@@ -34,7 +31,6 @@ jobs:
             - name: Run Semantic Release
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-                  GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               if: ${{ github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main') }}
               run: npm run semantic-release
