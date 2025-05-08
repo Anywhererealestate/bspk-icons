@@ -2,7 +2,7 @@
     "name": "@bspk/icons",
     "version": "1.0.0-alpha",
     "main": "index.js",
-    "license": "CC-BY-ND-4.0",
+    "license": "CC-BY-4.0",
     "scripts": {
         "clean": "rm -rf ./*.js ./*.d.ts ./*svg ./src ./meta ./SvgIcon && mkdir -p src && touch ./src/index.ts",
         "generate": "ts-node .scripts/build.ts",
