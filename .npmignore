@@ -1,0 +1,10 @@
+.*
+*.tgz
+*.json
+*.ts
+!*.d.ts
+*.tsx
+icons/*
+src/*
+package
+assets

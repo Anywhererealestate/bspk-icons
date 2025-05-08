@@ -1,0 +1,33 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1807_40244" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="2" width="18" height="20">
+<path d="M20.2863 10.8003C21.2379 11.324 21.2379 12.676 20.2863 13.1997L5.0672 21.5744C4.14039 22.0844 3 21.4226 3 20.3747L3 3.6253C3 2.57743 4.14039 1.91561 5.0672 2.42561L20.2863 10.8003Z" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0_1807_40244)">
+<path d="M3.47604 21.4097L12.9692 11.8632L3.63239 2.47388C3.2599 2.71267 3 3.12493 3 3.62518V20.3746C3 20.8014 3.18917 21.1641 3.47604 21.4097Z" fill="url(#paint0_linear_1807_40244)"/>
+<path d="M20.2863 10.8004C21.2379 11.3241 21.2379 12.6762 20.2863 13.1998L16.4468 15.3126L12.9692 11.8634L16.2695 8.59009L20.2863 10.8004Z" fill="url(#paint1_linear_1807_40244)"/>
+<path d="M16.4467 15.3125L12.9692 11.8633L3.47595 21.4099C3.89342 21.7673 4.5178 21.8767 5.06714 21.5744L16.4467 15.3125Z" fill="url(#paint2_linear_1807_40244)"/>
+<path d="M3.63245 2.47399L12.9693 11.8633L16.2695 8.58996L5.06724 2.42561C4.58289 2.15909 4.04021 2.2126 3.63245 2.47399Z" fill="url(#paint3_linear_1807_40244)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1807_40244" x1="9.50769" y1="8.15524" x2="3.05329" y2="14.6627" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00C3FF"/>
+<stop offset="1" stop-color="#1BE2FA"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1807_40244" x1="12.9692" y1="11.8634" x2="21.5539" y2="11.8634" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFCE00"/>
+<stop offset="1" stop-color="#FFEA00"/>
+</linearGradient>
+<linearGradient id="paint2_linear_1807_40244" x1="3.27687" y1="22.5752" x2="14.6961" y2="13.4201" gradientUnits="userSpaceOnUse">
+<stop stop-color="#DE2453"/>
+<stop offset="1" stop-color="#FE3944"/>
+</linearGradient>
+<linearGradient id="paint3_linear_1807_40244" x1="3.8308" y1="1.42603" x2="14.6982" y2="10.3024" gradientUnits="userSpaceOnUse">
+<stop stop-color="#11D574"/>
+<stop offset="1" stop-color="#01F176"/>
+</linearGradient>
+</defs>
+</svg>
+
+
+
+<!-- Copyright 2025 Anywhere Real Estate - CC BY 4.0 -->
