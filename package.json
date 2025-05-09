@@ -13,6 +13,9 @@
         "semantic-release": "semantic-release",
         "pack": "npm run build && npm pack && npm run clean && mkdir ./src && mkdir -p src && touch ./src/index.ts"
     },
+    "publishConfig": {
+        "access": "public"
+    },
     "engines": {
         "node": ">=18"
     },
