@@ -1,6 +1,6 @@
 # Bespoke Icons
 
-Bespoke icons package, available on Artifactory, contains all the icons that are available for development teams.
+Bespoke icons package contains all the icons that are available for Anywhere Real Estate development teams.
 
 ## Installation
 
