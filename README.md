@@ -2,6 +2,8 @@
 
 Bespoke icons package contains all the icons that are available for Anywhere Real Estate development teams.
 
+https://bspk.anywhere.re/icons
+
 ## Installation
 
 ```bash

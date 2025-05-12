@@ -17,7 +17,7 @@
         "access": "public"
     },
     "engines": {
-        "node": ">=18"
+        "node": ">=20"
     },
     "peerDependencies": {
         "react": "^18.3.1",
