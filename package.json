@@ -5,13 +5,11 @@
     "license": "CC-BY-4.0",
     "scripts": {
         "clean": "rm -rf ./*.js ./*.d.ts ./*svg ./src ./meta ./SvgIcon && mkdir -p src && touch ./src/index.ts",
-        "generate": "ts-node .scripts/build.ts",
-        "tsc": "tsc",
-        "build": "ts-node .scripts/build.ts && tsc",
+        "build": "ts-node .scripts/build.ts",
         "build:material": "ts-node .scripts/build-material.ts",
         "build:anywhere": "ts-node .scripts/build-anywhere.ts",
         "semantic-release": "semantic-release",
-        "pack": "npm run build && npm pack && npm run clean && mkdir ./src && mkdir -p src && touch ./src/index.ts"
+        "pack": "npm run build && npm pack && npm run clean && mkdir -p src && touch ./src/index.ts && tar -xvf *.tgz"
     },
     "publishConfig": {
         "access": "public"

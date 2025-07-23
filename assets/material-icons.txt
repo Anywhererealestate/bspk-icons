@@ -1,541 +1,552 @@
-360	
-accessibility_new	
-accessible	
-account_circle	
-account_tree	
-add_a_photo	
-add_alert	
-add_chart	
-add_circle	
-add_comment	
-add_reaction	
-add_shopping_cart	
-add	
-airport_shuttle	
-alternate_email	
-analytics	
-apps	
-ar_on_you	
-ar_stickers	
-archive	
-area_chart	
-arrow_back	
-arrow_downward	
-arrow_drop_down	
-arrow_drop_up	
-arrow_forward	
-arrow_insert	
-arrow_left	
-arrow_outward	
-arrow_right	
-arrow_upward	
-assignment_add	
-assignment	
-attach_file_add	
-attach_file	
-attach_money	
-bakery_dining	
-bar_chart	
-bathroom	
-block	
-bookmark_add	
-bookmark_added	
-bookmark	
-bookmark_remove	
-bookmark	
-bookmarks	
-border_color	
-border_style	
-bubble_chart	
-call_end	
-call	
-cancel	
-chart_data	
-chat_bubble	
-chat	
-check_circle	
-check	
-checklist	
-chevron_left	
-close	
-closed_caption_disabled	
-closed_caption	
-cloud_done	
-cloud_download	
-cloud	
-cloud_off	
-cloud_upload	
-cloud	
-code	
-cognition	
-colors	
-commute	
-computer	
-construction	
-contact_mail	
-contact_page	
-contact_phone	
-contact_support	
-contacts	
-content_copy	
-content_paste_off	
-content_paste_search	
-copyright	
-credit_card	
-dangerous	
-dark_mode	
-dashboard	
-database	
-delete	
-description	
-desktop_windows	
-device_thermostat	
-devices	
-dialpad	
-directions_bike	
-directions_boat	
-directions_bus	
-directions_car	
-directions_subway	
-directions_walk	
-directions	
-do_not_disturb_on	
-donut_large	
-donut_small	
-door_open	
-draft	
-drafts	
-drag_handle	
-drag_indicator	
-draw	
-edit	
-edit_road	
-edit_square	
-edit	
-egg	
-emoji_language	
-emoticon	
-encrypted	
-error	
-event	
-exercise	
-explore	
-face_retouching_off	
-fastfood	
-favorite	
-file_download	
-file_upload	
-filter_list	
-finance	
-fingerprint_off	
-fingerprint	
-fitness_center	
-flag	
-flash_auto	
-folder	
-folder_open	
-folder	
-fork_right	
-format_color_fill	the name ends with fill not the filled version
-format_shapes	
-format_size	
-forward_to_inbox	
-forward	
-full_stacked_bar_chart	
-fullscreen	
-grid_view	
-grouped_bar_chart	
-group	
-hail	
-handshake	
-handyman	
-headset_mic	
-hearing	
-heat_pump	
-heat	
-history	
-home	
-hvac	
-icecream	
-badge	
-id_card	
-image	
-inbox	
-incomplete_circle	
-info	
-ink_eraser	
-inventory	
-ios_share	
-kebab_dining	
-key	
-key_off	
-key_vertical	
-key	
-keyboard_arrow_down	
-keyboard	
-label	
-label_important	
-label	
-landscape	
-language	
-laundry	
-layers	
-leaderboard	
-left_panel_close	
-left_panel_open	
-license	
-light	
-light_mode	
-light	
-lightbulb	
-link_off	
-link	
-list	
-local_cafe	
-local_taxi	
-location_disabled	
-location_off	
-location_on	
-location_searching	
-lock	
-lock_open	
-lock	
-login	
-logout	
-mail	
-mail_lock	
-mail	
-man	
-manage_accounts	
-map	
-mark_as_unread	
-mark_email_read	
-mark_email_unread	
-menu_book	
-menu	
-merge	
-mic	
-mic_off	
-mic	
-mode_cool	
-mode_heat	
-money_off	
-monitor	
-mood_bad	
-mood	
-more_horiz	
-more_vert	
-move_location	
-move_to_inbox	
-multiline_chart	
-my_location	
-navigation	
-near_me	
-no_sound	
-north_west	
-north	
-notifications	
-notifications_off	
-notifications	
-nutrition	
-open_in_full	
-open_in_new	
-other_houses	
-outbox	
-outgoing_mail	
-oven_gen	
-paid	
-palette	
-pan_zoom	
-local_parking	
-partner_exchange	
-pause_circle	
-pause	
-payments	
-pending_actions	
-percent	
-person_add	
-person_book	
-person_cancel	
-person_check	
-person	
-person_remove	
-person_search	
-person	
-photo_camera	
-pie_chart	
-pin	
-play_arrow	
-play_circle	
-play_pause	
-playlist_add_check	
-playlist_add	
-playlist_remove	
-policy	
-print	
-qr_code_scanner	
-qr_code	
-question_mark	
-ramp_left	
-ramp_right	
-real_estate_agent	
-receipt	
-receipt_long	
-receipt	
-record_voice_over	
-refresh	
-remove_shopping_cart	
-remove	
-replay	
-reply_all	
-reply	
-report	
-restaurant	
-chevron_right	
-right_panel_close	
-right_panel_open	
-room_preferences	
-roundabout_left	
-roundabout_right	
-route	
-save	
-scatter_plot	
-schedule	
-schedule_send	
-schedule	
-schema	
-school	
-score	
-search	
-sell	
-send	
-sentiment_dissatisfied	
-sentiment_extremely_dissatisfied	
-sentiment_neutral	
-sentiment_satisfied	
-sentiment_very_dissatisfied	
-sentiment_very_satisfied	
-settings	
-share	
-shopping_bag	
-shopping_cart_checkout	
-shopping_cart	
-shopping_cart_off	
-shopping_cart	
-sick	
-sign_language	
-skip_next	
-skip_previous	
-smartphone	
-sms	
-sort_by_alpha	
-sort	
-south_east	
-south_west	
-south	
-square_foot	
-stacked_bar_chart	
-stacked_email	
-stacks	
-star	
-stop_circle	
-stop	
-storefront	
-straight	
-straighten	
-stress_management	
-subway	
-swap_vert	
-sync	
-table_chart	
-table_chart_view	
-table_chart	
-tablet	
-tag	
-taxi_alert	
-thumb_down	
-thumb_up	
-timeline	
-timer	
-train	
-translate	
-travel_explore	
-trending_down	
-trending_flat	
-trending_up	
-trip	
-trophy	
-tune	
-turn_left	
-turn_right	
-turn_sharp_left	
-turn_slight_left	
-turn_slight_right	
-tv	
-u_turn_left	
-u_turn_right	
-unarchive	
-undo	
-unsubscribe	
-keyboard_arrow_up	
-upcoming	
-video_library	
-videocam	
-view_column	
-view_module	
-visibility_off	
-visibility	
-voicemail	
-volume_down	
-volume_mute	
-volume_off	
-volume_down	misspelling, duplicate. Fixed- should be volume
-wallet	
-warning	
-wc	
-west	
-wifi_home	
-wifi	
-woman	
-work	
-zoom_in_map	
-zoom_in	
-zoom_out_map	
-zoom_out	
-cognition	
-emoji_language	
-sign_language	
-swap_vertical_circle	
-tv	
-volume_up	
-fireplace	added week of Oct 21 - Oct 25
-globe	added week of Oct 21 - Oct 25
-travel_explore	added week of Oct 21 - Oct 25
-public	added week of Oct 21 - Oct 25
-diversity_1	added week of Oct 21 - Oct 25
-villa	added week of Oct 21 - Oct 25
-forest	added week of Oct 21 - Oct 25
-person_add_disabled	added week of Oct 21 - Oct 25
-resize	added week of Oct 21 - Oct 25
-family_home	added week of Oct 21 - Oct 25
-g_translate	added week of Oct 21 - Oct 25
-bolt	added week of Oct 21 - Oct 25
-fit_screen	added week of Oct 21 - Oct 25
-fullscreen_exit	added week of Oct 21 - Oct 25
-settings_accessibility	added week of Oct 21 - Oct 25
-delete_forever	added week of Oct 21 - Oct 25
-mode_fan	added week of Oct 21 - Oct 25
-mode_cool	added week of Oct 21 - Oct 25
-thermometer	added week of Oct 21 - Oct 25
-thermometer_add	added week of Oct 21 - Oct 25
-thermostat_auto	added week of Oct 21 - Oct 25
-thermostat	added week of Oct 21 - Oct 25
-thermometer_gain	added week of Oct 21 - Oct 25
-thermometer_loss	added week of Oct 21 - Oct 25
-heat_pump	added week of Oct 21 - Oct 25
-mode_fan_off	added week of Oct 21 - Oct 25
-mode_cool_off	added week of Oct 21 - Oct 25
-recycling	added week of Oct 21 - Oct 25
-science	added week of Oct 21 - Oct 25
-experiment	added week of Oct 21 - Oct 25
-campaign	added week of Oct 21 - Oct 25
-help	added week of Oct 21 - Oct 25
-wifi_calling	added week of Oct 21 - Oct 25
-signal_cellular_alt	added week of Oct 21 - Oct 25
-airplanemode_inactive	added week of Oct 21 - Oct 25
-flight	added week of Oct 21 - Oct 25
-travel	added week of Oct 21 - Oct 25
-bluetooth	added week of Oct 21 - Oct 25
-title	added week of Nov 4 - Nov 8 
-slab_serif	added week of Nov 4 - Nov 8 
-font_download	added week of Nov 4 - Nov 8 
-inventory	added week of Nov 10 - Nov 15
-deployed_code_alert	added week of Nov 10 - Nov 15
-package_2	added week of Nov 10 - Nov 15
-box	added week of Nov 10 - Nov 15
-local_shipping	added week of Nov 10 - Nov 15
-orders	added week of Nov 10 - Nov 15
-deployed_code_update	added week of Nov 10 - Nov 15
-deployed_code	added week of Nov 10 - Nov 15
-deployed_code_account	added week of Nov 10 - Nov 15
-deployed_code_history	added week of Nov 10 - Nov 15
-package	added week of Nov 10 - Nov 15
-box_add	added week of Nov 10 - Nov 15
-inventory_2	added week of Nov 10 - Nov 15
-view_in_ar	added week of Nov 17 - Nov 22
-dashboard_2	added week of Nov 17 - Nov 22
-preview	added week of Nov 17 - Nov 22
-view_list	added week of Nov 17 - Nov 22
-head_mounted_device	added week of Nov 17 - Nov 22
-view_column_2	added week of Nov 17 - Nov 22
-gallery_thumbnail	added week of Nov 17 - Nov 22
-view_day	added week of Nov 17 - Nov 22
-calendar_view_day	added week of Nov 17 - Nov 22
-view_module	added week of Nov 17 - Nov 22
-calendar_view_week	added week of Nov 17 - Nov 22
-view_carousel	added week of Nov 17 - Nov 22
-apartment	added week of Nov 25 - Nov 29
-category	added week of Nov 25 - Nov 29
-extension	added week of Dec 30 - Jan 3
-contrast	added week of Jan 21 - Jan 26
-contrast_circle	added week of Jan 21 - Jan 26
-contrast_square	added week of Jan 21 - Jan 26
-extension_off	added week of Jan 21 - Jan 26
-input	added week of Jan 21 - Jan 26
-music note	added week of Jan 21 - Jan 26
-document scanner	added week of Jan 27 - Jan 31
-barcode	added week of Jan 27 - Jan 31
-barcode scanner	added week of Jan 27 - Jan 31
-bed	added week of Feb 9 - Feb 14
-bathroom	added week of Feb 9 - Feb 14
-forum	added week of Feb 9 - Feb 14
-vertical align center	added week of Mar 2 - Mar 7
-format letter spacing wider	added week of Mar 2 - Mar 7
-horizontal distribute	added week of Mar 2 - Mar 7
-format letter spacing wide	added week of Mar 2 - Mar 7
-vertical distribute	added week of Mar 2 - Mar 7
-vertical align bottom	added week of Mar 2 - Mar 7
-vertical align top	added week of Mar 2 - Mar 7
-align horizontal right	added week of Mar 2 - Mar 7
-align justify space even	added week of Mar 2 - Mar 7
-segment	added week of Mar 2 - Mar 7
-align vertical top	added week of Mar 2 - Mar 7
-format list numbered	added week of Mar 2 - Mar 7
-align vertical bottom	added week of Mar 2 - Mar 7
-format list bulleted	added week of Mar 2 - Mar 7
-align vertical center	added week of Mar 2 - Mar 7
-align items stretch	added week of Mar 2 - Mar 7
-align justify space around	added week of Mar 2 - Mar 7
-subject	added week of Mar 2 - Mar 7
-align justify space between	added week of Mar 2 - Mar 7
-format align left	added week of Mar 2 - Mar 7
-align horizontal center	added week of Mar 2 - Mar 7
-align space even	added week of Mar 2 - Mar 7
-align horizontal left	added week of Mar 2 - Mar 7
-format align center	added week of Mar 2 - Mar 7
-align justify stretch	added week of Mar 2 - Mar 7
-align justify center	added week of Mar 2 - Mar 7
-align justify flex end	added week of Mar 2 - Mar 7
-align center	added week of Mar 2 - Mar 7
-align flex center	added week of Mar 2 - Mar 7
-format align right	added week of Mar 2 - Mar 7
-align justify flex start	added week of Mar 2 - Mar 7
-align flex start	added week of Mar 2 - Mar 7
-align space between	added week of Mar 2 - Mar 7
-align start	added week of Mar 2 - Mar 7
-format align justify	added week of Mar 2 - Mar 7
-align space around	added week of Mar 2 - Mar 7
-align end	added week of Mar 2 - Mar 7
-align stretch	added week of Mar 2 - Mar 7
-align flex end	added week of Mar 2 - Mar 7
-format line spacing	added week of Mar 2 - Mar 7
-verified user	
-home work	added week of  Apr 21 - Apr 25
-add business	added week of  Apr 21 - Apr 25
-business center	added week of  Apr 21 - Apr 25
-home storage	added week of  Apr 21 - Apr 25
-event note	added week of  Apr 21 - Apr 25
-flowchart	added week of  Apr 21 - Apr 25
-folder shared	added week of  Apr 21 - Apr 25
-lan	added week of  Apr 21 - Apr 25
-hub	added week of  Apr 21 - Apr 25
+360
+accessibility_new
+accessible
+account_circle
+account_tree
+add_a_photo
+add_alert
+add_chart
+add_circle
+add_comment
+add_reaction
+add_shopping_cart
+add, -ignore-fill
+airport_shuttle
+alternate_email
+analytics
+apps
+ar_on_you
+ar_stickers
+archive
+area_chart
+arrow_back
+arrow_downward
+arrow_drop_down
+arrow_drop_up
+arrow_forward
+arrow_insert
+arrow_left
+arrow_outward
+arrow_right
+arrow_upward
+assignment_add
+assignment
+attach_file_add
+attach_file
+attach_money
+bakery_dining
+bar_chart
+bathroom
+block
+bookmark_add
+bookmark_added
+bookmark
+bookmark_remove
+bookmark
+bookmarks
+border_color
+border_style
+bubble_chart
+call_end
+call
+cancel
+chart_data
+chat_bubble
+chat
+check_circle
+check
+checklist
+chevron_left
+close
+closed_caption_disabled
+closed_caption
+cloud_done
+cloud_download
+cloud
+cloud_off
+cloud_upload
+cloud
+code
+cognition
+colors
+commute
+computer
+construction
+contact_mail
+contact_page
+contact_phone
+contact_support
+contacts
+content_copy
+content_paste_off
+content_paste_search
+copyright
+credit_card
+dangerous
+dark_mode
+dashboard
+database
+delete
+description
+desktop_windows
+device_thermostat
+devices
+dialpad
+directions_bike
+directions_boat
+directions_bus
+directions_car
+directions_subway
+directions_walk
+directions
+do_not_disturb_on
+donut_large
+donut_small
+door_open
+draft
+drafts
+drag_handle
+drag_indicator
+edit
+edit_road
+edit_square
+edit
+egg
+emoji_language
+emoticon
+encrypted
+error
+event
+exercise
+explore
+face_retouching_off
+fastfood
+favorite
+file_download
+file_upload
+filter_list
+finance
+fingerprint_off
+fingerprint
+fitness_center
+flag
+flash_auto
+folder
+folder_open
+folder
+fork_right
+format_color_fill
+format_shapes
+format_size
+forward_to_inbox
+forward
+full_stacked_bar_chart
+fullscreen
+grid_view
+grouped_bar_chart
+group
+hail
+handshake
+handyman
+headset_mic
+hearing
+heat_pump
+heat
+history
+home
+hvac
+icecream
+badge
+id_card
+image
+inbox
+incomplete_circle
+info
+ink_eraser
+inventory
+ios_share
+kebab_dining
+key
+key_off
+key_vertical
+key
+keyboard_arrow_down
+keyboard
+label
+label_important
+label
+landscape
+language
+laundry
+layers
+leaderboard
+left_panel_close
+left_panel_open
+license
+light
+light_mode
+light
+lightbulb
+link_off
+link
+list
+local_cafe
+local_taxi
+location_disabled
+location_off
+location_on
+location_searching
+lock
+lock_open
+lock
+login
+logout
+mail
+mail_lock
+mail
+man
+manage_accounts
+map
+mark_as_unread
+mark_email_read
+mark_email_unread
+menu_book
+menu
+merge
+mic
+mic_off
+mic
+mode_cool
+mode_heat
+money_off
+monitor
+mood_bad
+mood
+more_horiz
+more_vert
+move_location
+move_to_inbox
+multiline_chart
+my_location
+navigation
+near_me
+no_sound
+north_west
+north
+notifications
+notifications_off
+notifications
+nutrition
+open_in_full
+open_in_new
+other_houses
+outbox
+outgoing_mail
+oven_gen
+paid
+palette
+pan_zoom
+local_parking
+partner_exchange
+pause_circle
+pause
+payments
+pending_actions
+percent
+person_add
+person_book
+person_cancel
+person_check
+person
+person_remove
+person_search
+person
+photo_camera
+pie_chart
+pin
+play_arrow
+play_circle
+play_pause
+playlist_add_check
+playlist_add
+playlist_remove
+policy
+print
+qr_code_scanner
+qr_code
+question_mark
+ramp_left
+ramp_right
+real_estate_agent
+receipt
+receipt_long
+receipt
+record_voice_over
+refresh
+remove_shopping_cart
+remove
+replay
+reply_all
+reply
+report
+restaurant
+chevron_right
+right_panel_close
+right_panel_open
+room_preferences
+roundabout_left
+roundabout_right
+route
+save
+scatter_plot
+schedule
+schedule_send
+schedule
+schema
+school
+score
+search
+sell
+send
+sentiment_dissatisfied
+sentiment_extremely_dissatisfied
+sentiment_neutral
+sentiment_satisfied
+sentiment_very_dissatisfied
+sentiment_very_satisfied
+settings
+share
+shopping_bag
+shopping_cart_checkout
+shopping_cart
+shopping_cart_off
+shopping_cart
+sick
+sign_language
+skip_next
+skip_previous
+smartphone
+sms
+sort_by_alpha
+sort
+south_east
+south_west
+south
+square_foot
+stacked_bar_chart
+stacked_email
+stacks
+star
+stop_circle
+stop
+storefront
+straight
+straighten
+stress_management
+subway
+swap_vert
+sync
+table_chart
+table_chart_view
+table_chart
+tablet
+tag
+taxi_alert
+thumb_down
+thumb_up
+timeline
+timer
+train
+translate
+travel_explore
+trending_down
+trending_flat
+trending_up
+trip
+trophy
+tune
+turn_left
+turn_right
+turn_sharp_left
+turn_slight_left
+turn_slight_right
+tv
+u_turn_left
+u_turn_right
+unarchive
+undo
+unsubscribe
+keyboard_arrow_up
+upcoming
+video_library
+videocam
+view_column
+view_module
+visibility_off
+visibility
+voicemail
+volume_down
+volume_mute
+volume_off
+volume_down
+wallet
+warning
+wc
+west
+wifi_home
+wifi
+woman
+work
+zoom_in_map
+zoom_in
+zoom_out_map
+zoom_out
+cognition
+emoji_language
+sign_language
+swap_vertical_circle
+tv
+volume_up
+fireplace
+globe
+travel_explore
+public
+diversity_1
+villa
+forest
+person_add_disabled
+resize
+family_home
+g_translate
+bolt
+fit_screen
+fullscreen_exit
+settings_accessibility
+delete_forever
+mode_fan
+mode_cool
+thermometer
+thermometer_add
+thermostat_auto
+thermostat
+thermometer_gain
+thermometer_loss
+heat_pump
+mode_fan_off
+mode_cool_off
+recycling
+science
+experiment
+campaign
+help
+wifi_calling
+signal_cellular_alt
+airplanemode_inactive
+flight
+travel
+bluetooth
+title
+slab_serif
+font_download
+inventory
+deployed_code_alert
+package_2
+box
+local_shipping
+orders
+deployed_code_update
+deployed_code
+deployed_code_account
+deployed_code_history
+package
+box_add
+inventory_2
+view_in_ar
+dashboard_2
+preview
+view_list
+head_mounted_device
+view_column_2
+gallery_thumbnail
+view_day
+calendar_view_day
+view_module
+calendar_view_week
+view_carousel
+apartment
+category
+extension
+contrast
+contrast_circle
+contrast_square
+extension_off
+input
+music_note
+document_scanner
+barcode
+barcode_scanner
+bed
+bathroom
+forum
+vertical_align_center
+format_letter_spacing_wider
+horizontal_distribute
+format_letter_spacing_wide
+vertical_distribute
+vertical_align_bottom
+vertical_align_top
+align_horizontal_right
+align_justify_space_even
+segment
+align_vertical_top
+format_list_numbered
+align_vertical_bottom
+format_list_bulleted
+align_vertical_center
+align_items_stretch
+align_justify_space_around
+subject
+align_justify_space_between
+format_align_left
+align_horizontal_center
+align_space_even
+align_horizontal_left
+format_align_center
+align_justify_stretch
+align_justify_center
+align_justify_flex_end
+align_center
+align_flex_center
+format_align_right
+align_justify_flex_start
+align_flex_start
+align_space_between
+align_start
+format_align_justify
+align_space_around
+align_end
+align_stretch
+align_flex_end
+format_line_spacing
+verified_user
+home_work
+add_business
+business_center
+home_storage
+event_note
+flowchart
+folder_shared
+lan
+hub
+note_add
+edit_note
+dashboard_customize
+pets
+keyboard_double_arrow_left
+keyboard_double_arrow_right
+warehouse
+token
+unarchive
+roofing
+token
+casino

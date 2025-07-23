@@ -1,3 +1,9 @@
+/**
+ * Build Material Icons
+ *
+ * ts-node .scripts/build-material.ts
+ */
+
 import { execSync } from 'child_process';
 import fs from 'fs';
 import { ANYWHERE_PATH, ICON_SIZE, MATERIAL_PATH } from './build-config';
@@ -30,7 +36,7 @@ function processMaterialList() {
         .split('\n')
         // filter out non-exisiting icons && remove anywhere icon duplicates
         .flatMap((line) => {
-            const originalName = line.split('\t')[0];
+            const [originalName, ...flags] = line.split(',').flatMap((item) => (item.trim() ? [item.trim()] : []));
             let iconName = originalName.trim().replace(/ /g, '_').toLowerCase();
 
             if (!allExistingMaterialIcons.includes(iconName)) iconName = iconName.replace(/_fill$/, '');
@@ -45,28 +51,46 @@ function processMaterialList() {
                 return [];
             }
 
-            return iconName;
+            return { iconName, originalName, flags };
         })
         // remove duplicates
         .filter((icon, index, arr) => arr.findIndex((i) => i === icon) === index && icon);
 
-    bespokeMaterialIcons.sort();
+    const FLAGS = { IGNORE_FILL: '-ignore-fill' };
 
-    bespokeMaterialIcons.forEach((icon) => {
-        const iconPath = `${MATERIAL_SOURCE_PATH}/${icon}/materialsymbolsrounded/` + `${icon}_${ICON_SIZE}px.svg`;
+    bespokeMaterialIcons.sort((a, b) => a.iconName.localeCompare(b.iconName));
 
-        const iconPathFilled =
-            `${MATERIAL_SOURCE_PATH}/${icon}/materialsymbolsrounded/` + `${icon}_fill1_${ICON_SIZE}px.svg`;
+    bespokeMaterialIcons.forEach(({ iconName, originalName, flags }) => {
+        const iconPath =
+            `${MATERIAL_SOURCE_PATH}/${iconName}/materialsymbolsrounded/` + `${iconName}_${ICON_SIZE}px.svg`;
 
-        if (!fs.existsSync(iconPath)) throw new Error(`icon not found: ${icon} / ${icon}`);
+        const iconPathFilled = flags.includes(FLAGS.IGNORE_FILL)
+            ? ''
+            : `${MATERIAL_SOURCE_PATH}/${iconName}/materialsymbolsrounded/` + `${iconName}_fill1_${ICON_SIZE}px.svg`;
+
+        if (!fs.existsSync(iconPath)) throw new Error(`icon not found: ${iconName} / ${iconName}`);
 
         const code = fs.readFileSync(iconPath, 'utf-8');
 
-        fs.writeFileSync(`${MATERIAL_PATH}/${icon}.svg`, code);
+        fs.writeFileSync(
+            `${MATERIAL_PATH}/${iconName}.svg`,
+            code +
+                `
 
-        if (fs.existsSync(iconPathFilled)) {
+
+<!-- Copyright 2025 Anywhere Real Estate - CC BY 4.0 -->`,
+        );
+
+        if (iconPathFilled && fs.existsSync(iconPathFilled)) {
             const codeFilled = fs.readFileSync(iconPathFilled, 'utf-8');
-            fs.writeFileSync(`${MATERIAL_PATH}/${icon}_fill.svg`, codeFilled);
+            fs.writeFileSync(
+                `${MATERIAL_PATH}/${iconName}_fill.svg`,
+                codeFilled +
+                    `
+
+
+<!-- Copyright 2025 Anywhere Real Estate - CC BY 4.0 -->`,
+            );
         }
     });
 }
