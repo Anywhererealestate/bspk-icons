@@ -27,4 +27,10 @@ export type IconMeta = {
     variantUnfilled?: string;
 };
 
-/** Copyright 2025 Anywhere Real Estate - CC BY 4.0 */
+export type IconName = '';
+
+export const meta: IconMeta[] = [
+    /**
+     *
+     */
+] as const;

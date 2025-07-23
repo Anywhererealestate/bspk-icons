@@ -3,14 +3,24 @@
  * from the Bespoke Design System. The script is run by executing the command `npm run build` and `npm run build f` to
  * force the generation of the icon data.
  *
- * The script: 2. reads the material folder to get the list of material icons to include. 2. reads the country folder to
- * get the list of country icons to include. 3. reads the anywhere folder to get the list of custom icons to include. 4.
- * clean up and optimizes the SVG code for each icon. 5. generates the SVG files for each icon. 6. generates the React
- * components for each icon. 7. generates the SvgIcon component which is a lazy loaded component that renders the icon.
- * 8. generates the meta/index.ts file which contains the icon metadata. 9. generates the index.ts file which exports
- * the IconType and IconMeta types. 10. runs prettier on the generated files. 11. compiles the TypeScript files. 12.
- * copies the generated JavaScript and TypeScript files to the root directory. 13. removes the src directory. 14.
- * creates a placeholder file in the src directory. 15. outputs the completion message.
+ * The script:
+ * 1. reads the material folder to get the list of material icons to include.
+ * 2. reads the country folder to get the list of country icons to include.
+ * 3. reads the anywhere folder to get the list of custom icons to include.
+ * 4. cleans up and optimizes the SVG code for each icon.
+ * 5. generates the SVG files for each icon.
+ * 6. generates the React components for each icon.
+ * 7. generates the SvgIcon component which is a lazy loaded component that renders the icon.
+ * 8. generates the meta/index.ts file which contains the icon metadata.
+ * 9. generates the index.ts file which exports the IconType and IconMeta types.
+ * 10. runs prettier on the generated files.
+ * 11. compiles the TypeScript files.
+ * 12. copies the generated JavaScript and TypeScript files to the root directory.
+ * 13. removes the src directory.
+ * 14. creates a placeholder file in the src directory.
+ * 15. outputs the completion message.
+ *
+ * ts-node .scripts/build.ts
  */
 import child_process, { execSync } from 'child_process';
 import fs from 'fs';
@@ -18,7 +28,7 @@ import path from 'path';
 import { optimize } from 'svgo';
 import { transform } from '@svgr/core';
 import { ICON_SIZE, COUNTRY_PATH, ANYWHERE_PATH, MATERIAL_PATH, BRAND_PATH } from './build-config';
-import { IconType } from './build-types';
+import { IconMeta, IconType } from './build-types';
 
 const exec = (...commands: string[]) =>
     commands.forEach((command) => child_process.execSync(command, { stdio: 'inherit' }));
@@ -168,7 +178,7 @@ function createSvgs(iconData: IconData[]) {
             return;
         }
 
-        const filePath = path.join('./', icon.name + '.svg');
+        const filePath = path.join('./dist/', icon.name + '.svg');
 
         fs.writeFileSync(filePath, icon.optimized.toString());
     });
@@ -258,24 +268,64 @@ export { SvgIcon };
 
     execSync(`mkdir -p ./src/meta`);
 
+    const iconNames = iconData.map((icon) => icon.name);
+
+    const previousMeta: IconMeta[] = fs.existsSync(path.join('meta.json'))
+        ? JSON.parse(fs.readFileSync(path.join('meta.json'), 'utf-8'))
+        : [];
+
+    const nextMeta = iconData.map((icon): IconMeta => {
+        let title = icon.name.replace(/([a-z])([A-Z])/g, '$1 $2');
+
+        if (icon.type === 'country') {
+            title = title.replace(/^Flag /, 'Flag - ');
+            title = title.replace(/^Symbol /, 'Symbol - ');
+        }
+
+        const variantFill =
+            !icon.name.endsWith('Fill') && iconNames.includes(icon.name + 'Fill') ? icon.name + 'Fill' : undefined;
+
+        const variantUnfilled =
+            icon.name.endsWith('Fill') && iconNames.includes(icon.name.replace(/Fill$/, ''))
+                ? icon.name.replace(/Fill$/, '')
+                : undefined;
+
+        const nextIcon: IconMeta = {
+            name: icon.name,
+            title,
+            type: icon.type,
+            variantFill,
+            variantUnfilled,
+        };
+
+        if (icon.type === 'brand' || icon.type === 'country' || nextIcon.variantUnfilled) return nextIcon;
+
+        nextIcon.alias = previousMeta.find((previousIcon) => previousIcon.name === icon.name)?.alias || nextIcon.title;
+
+        return nextIcon;
+    });
+
+    // icons without aliases
+    const missingAliases = nextMeta.filter((icon) => icon.alias === icon.title);
+
+    if (missingAliases.length > 0) {
+        console.warn(
+            `\n\nIcons without aliases (${missingAliases.length}): \n${missingAliases.map((icon) => `\n- ${icon.name}`)}`,
+        );
+    } else {
+        console.info('\n\nAll icons have aliases. :)');
+    }
+
     fs.writeFileSync(
         path.join('src', 'meta/index.ts'),
         `import type { IconMeta } from '../';
 
 export type IconName = '${iconData.map((icon) => icon.name).join("' | '")}';
 
-export const meta: Record<IconName, IconMeta> = ${JSON.stringify(
-            Object.fromEntries(
-                iconData.map(({ code, optimized, svg, ...rest }) => [
-                    rest.name,
-                    {
-                        filled: rest.filled,
-                        type: rest.type,
-                    },
-                ]),
-            ),
-        )} as const;`,
+export const meta: IconMeta[] = ${JSON.stringify(nextMeta)} as const;`,
     );
+
+    fs.writeFileSync(path.join('meta.json'), JSON.stringify(nextMeta, null, 2));
 
     exec(
         `npx prettier --log-level silent --write ./src/*.tsx`,
@@ -297,13 +347,18 @@ export const meta: Record<IconName, IconMeta> = ${JSON.stringify(
 
     const iconData = getIconData();
 
-    fs.writeFileSync('test-data.json', JSON.stringify(iconData, null, 2));
-
     optimizeIcons(iconData);
 
     createSvgs(iconData);
 
     generateComponent(iconData);
+
+    // compile the typescript files
+    execSync(`npx tsc`, { stdio: 'inherit' });
+
+    // copy the generated files to the root directory
+
+    // execSync(`rm -rf src && mkdir -p src && touch ./src/index.ts`, { stdio: 'inherit' });
 
     console.log('\ngeneration complete!');
 })();

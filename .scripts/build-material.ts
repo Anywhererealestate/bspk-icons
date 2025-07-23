@@ -1,3 +1,9 @@
+/**
+ * Build Material Icons
+ *
+ * ts-node .scripts/build-material.ts
+ */
+
 import { execSync } from 'child_process';
 import fs from 'fs';
 import { ANYWHERE_PATH, ICON_SIZE, MATERIAL_PATH } from './build-config';

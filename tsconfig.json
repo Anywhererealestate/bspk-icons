@@ -13,9 +13,9 @@
         "noImplicitAny": true,
         "strictNullChecks": true,
         "esModuleInterop": true,
-        "module": "commonjs",
+        "module": "ES2020",
         "declaration": true,
-        "outDir": "./"
+        "outDir": "./dist"
     },
     "exclude": [
         "node_modules"
