@@ -45,6 +45,13 @@ export const makeComponentName = (fileName: string) => {
         .replace(/ /g, '');
 };
 
+export const makeTitle = (name: string) => {
+    return name
+        .replace('AZ', 'A-Z')
+        .replace(/([a-z])([A-Z])/g, '$1 $2')
+        .replace(/([A-Z])([A-Z][a-z])/g, '$1 $2');
+};
+
 type IconData = {
     name: string;
     code?: string;
@@ -52,6 +59,7 @@ type IconData = {
     type: IconType;
     optimized?: string;
     svg?: string;
+    fileSize: number;
 };
 
 const config: {
@@ -101,6 +109,7 @@ function getIconData(): IconData[] {
                     code,
                     filled,
                     type,
+                    fileSize: fs.statSync(path + '/' + file).size,
                 },
             ];
         });
@@ -116,47 +125,40 @@ function getIconData(): IconData[] {
 }
 
 function optimizeIcons(iconData: IconData[]) {
-    if (iconData[0].optimized && process.argv[2] !== 'f') {
-        console.log('\nskipping optimizing icons...');
-        return;
-    }
-
     console.log('\noptimizing icons...');
 
     iconData.forEach((icon) => {
-        icon.optimized =
-            icon.code &&
-            optimize(icon.code, {
-                multipass: true,
-                plugins: [
-                    'removeDimensions',
-                    'cleanupIds',
-                    'removeUselessDefs',
-                    'removeDesc',
-                    'removeTitle',
-                    'removeMetadata',
-                    'removeRasterImages',
-                    'removeScriptElement',
-                    'removeStyleElement',
-                    'removeXMLNS',
-                    'removeXMLProcInst',
-                    'removeXlink',
-                    icon.type !== 'country'
-                        ? {
-                              name: 'convertColors',
-                              params: {
-                                  currentColor: true,
-                              },
-                          }
-                        : 'cleanupAttrs',
-                    {
-                        name: 'prefixIds',
-                        params: {
-                            prefix: 'Svg' + icon.name,
-                        },
+        icon.optimized = icon.optimized = optimize(icon.code!, {
+            multipass: true,
+            plugins: [
+                'removeDimensions',
+                'cleanupIds',
+                'removeUselessDefs',
+                'removeDesc',
+                'removeTitle',
+                'removeMetadata',
+                'removeRasterImages',
+                'removeScriptElement',
+                'removeStyleElement',
+                'removeXMLNS',
+                'removeXMLProcInst',
+                'removeXlink',
+                !['country', 'brand'].includes(icon.type)
+                    ? {
+                          name: 'convertColors',
+                          params: {
+                              currentColor: true,
+                          },
+                      }
+                    : 'cleanupAttrs',
+                {
+                    name: 'prefixIds',
+                    params: {
+                        prefix: 'Svg' + icon.name,
                     },
-                ],
-            }).data;
+                },
+            ],
+        }).data;
 
         if (icon.type === 'material') icon.optimized = icon.optimized?.replace('<svg', '<svg fill="currentColor"');
 
@@ -281,7 +283,7 @@ export { SvgIcon };
         : [];
 
     const nextMeta = iconData.map((icon): IconMeta => {
-        let title = icon.name.replace(/([a-z])([A-Z])/g, '$1 $2');
+        let title = makeTitle(icon.name);
 
         if (icon.type === 'country') {
             title = title.replace(/^Flag /, 'Flag - ');

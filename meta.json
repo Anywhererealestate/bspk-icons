@@ -64,14 +64,14 @@
   },
   {
     "name": "AddAPhoto",
-    "title": "Add APhoto",
+    "title": "Add A Photo",
     "type": "material",
     "variantFill": "AddAPhotoFill",
     "alias": "camera, photo, image, picture, upload photo, new photo, create image, plus camera"
   },
   {
     "name": "AddAPhotoFill",
-    "title": "Add APhoto Fill",
+    "title": "Add A Photo Fill",
     "type": "material",
     "variantUnfilled": "AddAPhoto"
   },
@@ -543,13 +543,13 @@
   },
   {
     "name": "AZAscend",
-    "title": "AZAscend",
+    "title": "A-Z Ascend",
     "type": "anywhere",
     "alias": "alphabetical, ascending, a-z, sort, order"
   },
   {
     "name": "AZDescend",
-    "title": "AZDescend",
+    "title": "A-Z Descend",
     "type": "anywhere",
     "alias": "alphabetical, descending, z-a, sort, order"
   },
@@ -3636,7 +3636,7 @@
   },
   {
     "name": "GTranslate",
-    "title": "GTranslate",
+    "title": "G Translate",
     "type": "material",
     "alias": "google translate, translation, language, convert, interpreter, multilingual"
   },
@@ -4025,11 +4025,6 @@
     "title": "Input",
     "type": "material",
     "alias": "enter, type, field, form"
-  },
-  {
-    "name": "Instagram",
-    "title": "Instagram",
-    "type": "brand"
   },
   {
     "name": "InstagramBlack",
@@ -7904,13 +7899,13 @@
   },
   {
     "name": "UTurnLeft",
-    "title": "UTurn Left",
+    "title": "U Turn Left",
     "type": "material",
     "alias": "u-turn-left, u_turn_left, direction, arrow"
   },
   {
     "name": "UTurnRight",
-    "title": "UTurn Right",
+    "title": "U Turn Right",
     "type": "material",
     "alias": "u-turn-right, u_turn_right, direction, arrow"
   },
@@ -8279,7 +8274,7 @@
   },
   {
     "name": "XWhite",
-    "title": "XWhite",
+    "title": "X White",
     "type": "brand"
   },
   {
