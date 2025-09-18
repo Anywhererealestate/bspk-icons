@@ -326,7 +326,7 @@ export { SvgIcon };
 
     fs.writeFileSync(
         path.join('src', 'meta/index.ts'),
-        fs.readFileSync(path.resolve(__dirname, 'build-types.ts'), 'utf-8') +
+        fs.readFileSync(path.resolve('.scripts', 'build-types.ts'), 'utf-8') +
             `
 export type IconName = '${iconData.map((icon) => icon.name).join("' | '")}';
 
