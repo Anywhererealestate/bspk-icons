@@ -921,6 +921,13 @@
     "variantUnfilled": "Casino"
   },
   {
+    "name": "Cat",
+    "title": "Cat",
+    "type": "anywhere",
+    "variantFill": "CatFill",
+    "alias": ""
+  },
+  {
     "name": "Category",
     "title": "Category",
     "type": "material",
@@ -932,6 +939,12 @@
     "title": "Category Fill",
     "type": "material",
     "variantUnfilled": "Category"
+  },
+  {
+    "name": "CatFill",
+    "title": "Cat Fill",
+    "type": "anywhere",
+    "variantUnfilled": "Cat"
   },
   {
     "name": "ChartData",
@@ -1028,6 +1041,19 @@
     "title": "Circle Fill",
     "type": "anywhere",
     "variantUnfilled": "Circle"
+  },
+  {
+    "name": "CleaningServices",
+    "title": "Cleaning Services",
+    "type": "material",
+    "variantFill": "CleaningServicesFill",
+    "alias": ""
+  },
+  {
+    "name": "CleaningServicesFill",
+    "title": "Cleaning Services Fill",
+    "type": "material",
+    "variantUnfilled": "CleaningServices"
   },
   {
     "name": "Close",
@@ -1690,6 +1716,19 @@
     "title": "Document Scanner Fill",
     "type": "material",
     "variantUnfilled": "DocumentScanner"
+  },
+  {
+    "name": "Dog",
+    "title": "Dog",
+    "type": "anywhere",
+    "variantFill": "DogFill",
+    "alias": ""
+  },
+  {
+    "name": "DogFill",
+    "title": "Dog Fill",
+    "type": "anywhere",
+    "variantUnfilled": "Dog"
   },
   {
     "name": "DoNotDisturbOn",
@@ -8166,6 +8205,19 @@
     "variantUnfilled": "VolumeUp"
   },
   {
+    "name": "VolunteerActivism",
+    "title": "Volunteer Activism",
+    "type": "material",
+    "variantFill": "VolunteerActivismFill",
+    "alias": ""
+  },
+  {
+    "name": "VolunteerActivismFill",
+    "title": "Volunteer Activism Fill",
+    "type": "material",
+    "variantUnfilled": "VolunteerActivism"
+  },
+  {
     "name": "Wallet",
     "title": "Wallet",
     "type": "material",
@@ -8247,6 +8299,19 @@
     "title": "Wifi Home Fill",
     "type": "material",
     "variantUnfilled": "WifiHome"
+  },
+  {
+    "name": "WineBar",
+    "title": "Wine Bar",
+    "type": "material",
+    "variantFill": "WineBarFill",
+    "alias": ""
+  },
+  {
+    "name": "WineBarFill",
+    "title": "Wine Bar Fill",
+    "type": "material",
+    "variantUnfilled": "WineBar"
   },
   {
     "name": "Woman",
