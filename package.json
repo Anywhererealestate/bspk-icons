@@ -13,7 +13,12 @@
         "pack": "npm run build && npm pack && npm run clean && mkdir -p src && touch ./src/index.ts && tar -xvf *.tgz"
     },
     "publishConfig": {
-        "access": "public"
+        "access": "public",
+        "provenance": true
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Anywhererealestate/bspk-icons"
     },
     "engines": {
         "node": ">=20"
