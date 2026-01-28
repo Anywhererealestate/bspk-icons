@@ -925,7 +925,7 @@
     "title": "Cat",
     "type": "anywhere",
     "variantFill": "CatFill",
-    "alias": ""
+    "alias": "cat, feline, pet, kitten, kitty, animal, pet care, veterinary, mammal"
   },
   {
     "name": "Category",
@@ -1047,7 +1047,7 @@
     "title": "Cleaning Services",
     "type": "material",
     "variantFill": "CleaningServicesFill",
-    "alias": ""
+    "alias": "cleaning, housekeeping, janitorial, sanitize, disinfect, mop, broom, dust, tidy, chores, services, cleaner"
   },
   {
     "name": "CleaningServicesFill",
@@ -1722,7 +1722,7 @@
     "title": "Dog",
     "type": "anywhere",
     "variantFill": "DogFill",
-    "alias": ""
+    "alias": "dog, canine, pet, puppy, pooch, animal, pet care, veterinary, mammal"
   },
   {
     "name": "DogFill",
@@ -8209,7 +8209,7 @@
     "title": "Volunteer Activism",
     "type": "material",
     "variantFill": "VolunteerActivismFill",
-    "alias": ""
+    "alias": "volunteer, charity, donation, nonprofit, heart, hands, activism, community service, help, support, give back"
   },
   {
     "name": "VolunteerActivismFill",
@@ -8305,7 +8305,7 @@
     "title": "Wine Bar",
     "type": "material",
     "variantFill": "WineBarFill",
-    "alias": ""
+    "alias": "wine, bar, drink, alcohol, beverage, glass, winery, sommelier, tavern, lounge"
   },
   {
     "name": "WineBarFill",
