@@ -6,9 +6,12 @@ on:
             - main
     workflow_dispatch:
 
+permissions:
+    contents: write # to be able to publish a GitHub release
+
 jobs:
     release:
-        name: Publish to npm
+        name: Release
         runs-on: ubuntu-latest
         environment: release
 
@@ -21,9 +24,13 @@ jobs:
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
 
             - name: Setup Node
               uses: actions/setup-node@v4
+              with:
+                  node-version: 'lts/*'
 
             - name: Install dependencies
               run: npm ci
@@ -34,5 +41,4 @@ jobs:
             - name: Run Semantic Release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              if: ${{ github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main') }}
               run: npm run semantic-release
